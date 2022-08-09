@@ -14,16 +14,40 @@
 
 }
 
-.footer__logo{
+.footer__logo {
     grid-area: logo;
 }
-.footer__navigation{
+
+.footer__navigation {
     grid-area: navigation;
+    font-size: 18px;
+    line-height: 22px;
 }
-.footer__copyright{
+
+.footer__copyright {
     grid-area: copyright;
+    font-size: 12px;
+    line-height: 130%;
 }
-.footer__design{
+
+.footer__design {
     grid-area: design;
     justify-self: end;
+    font-size: 12px;
+    line-height: 130%;
+}
+
+@media (max-width: 768px) {
+    .footer__navigation {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__container {
+        grid-template-areas: 
+        "logo navigation"
+        "copyright design";
+    }
 }
