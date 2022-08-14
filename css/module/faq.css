@@ -59,8 +59,41 @@
 
 .faq__dropdown {
     padding: 0 100px 33px 18px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
 }
 
 .faq__item:not(.faq__item_show) .faq__answer {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .faq__question {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .faq__answer {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq__question {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px;
+    }
+
+    .faq__question::after {
+        width: 18px;
+        height: 12px;
+    }
+
+    .faq__dropdown {
+        padding: 0 10px 10px;
+    }
 }
